@@ -20780,7 +20780,7 @@ var XLSX = {};
                     var image = images[sId - 1];
                     f = 'xl/media/' + image.name;
                     zip.file(f, image.data, image.opts);
-                    add_rels(draw_rels, sId, "../media/" + image.name, RELS.IMG);
+                    add_rels(draw_rels, rId, "../media/" + image.name, RELS.IMG);
                 }
                 zip.file("xl/drawings/drawing" + rId + "." + wbext, write_drawing(images, rId));
                 add_rels(rels, rId, "../drawings/drawing" + rId + "." + wbext, RELS.DRAW);
